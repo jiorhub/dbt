@@ -1,0 +1,22 @@
+{
+    "title": "DBT",
+    "properties": {
+        "lib.dir": "lib",
+        "src.dir": "src",
+        "build.dir": "build"
+    },
+    "targets" : {
+        "init": {
+            "tasks": [
+                {"command": "mkdir", "dir": "${build.dir}"},
+                {"command": "mkdir", "dir": "${lib.dir}"}
+            ]
+        },
+        "compile": {
+            "depends": ["init"],
+            "tasks": {
+
+            }
+        }
+    }
+}
